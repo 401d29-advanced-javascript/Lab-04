@@ -34,4 +34,5 @@ fs.readFile('./files/pair-programming.txt', (err, data) => {
   content.push(data);
   console.log(content);
   // Buffer.slice(46, 32);
+  //iterate through pair-programming.txt content and find section titles, paragraph sentences, numbered section titles
 });
