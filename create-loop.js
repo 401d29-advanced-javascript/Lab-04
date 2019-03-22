@@ -21,10 +21,10 @@ var something = new Buffer([39, 117, 115, 101, 32, 115, 116, 114, 105, 99, 116, 
 
 console.log('hit!');
 
-// fs.appendFile('./files/loop.js', something, function (err) {
-  // if (err) throw err;
-  // console.log('loop.js created: ', something.toString());
-// });
+fs.appendFile('./files/loop.js', something, function (err) {
+  if (err) throw err;
+  console.log('loop.js created: ', something.toString());
+});
 
 
 fs.readFile('./files/pair-programming.txt', (err, data) => {
@@ -33,4 +33,5 @@ fs.readFile('./files/pair-programming.txt', (err, data) => {
   let content = [];
   content.push(data);
   console.log(content);
+  // Buffer.slice(46, 32);
 });
